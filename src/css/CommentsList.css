@@ -85,3 +85,58 @@
   text-align: center;
   color: #6b7280;
 }
+
+@media (max-width: 1024px) {
+  .comment-list {
+    margin-left: 180px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .comment-list {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .single-comment h4 {
+    font-size: 13px;
+  }
+
+  .single-comment p,
+  .single-comment span {
+    font-size: 12px;
+  }
+
+  .comment-delete,
+  .comment-edit {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .comment-list {
+    padding: 10px;
+  }
+
+  .single-comment {
+    padding: 10px 12px;
+  }
+
+  .single-comment h4 {
+    font-size: 12px;
+  }
+
+  .single-comment p,
+  .single-comment span {
+    font-size: 11px;
+  }
+
+  .comment-delete,
+  .comment-edit {
+    font-size: 9px;
+    padding: 3px 6px;
+    margin-right: 4px;
+  }
+}

@@ -5,7 +5,37 @@
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #333;
+  margin: 0 auto; /* center on all screens */
 }
+
+
+@media (max-width: 768px) {
+  .chart-box {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .chart-box .recharts-cartesian-axis-tick text {
+    font-size: 11px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .chart-box {
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .chart-box .recharts-cartesian-axis-tick text {
+    font-size: 10px;
+  }
+
+  .chart-box .recharts-legend-item text {
+    font-size: 10px;
+  }
+}
+
 
 .chart-box .recharts-cartesian-axis-tick text {
   fill: #fff;

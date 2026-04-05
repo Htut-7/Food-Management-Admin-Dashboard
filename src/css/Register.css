@@ -81,7 +81,7 @@
   }
 }
 
-.account-link a{
+.account-link a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +91,77 @@
   font-weight: 500;
 }
 
-.account-link a:hover{
+.account-link a:hover {
   color: red;
+}
+
+@media (max-width: 1024px) {
+  .reg-form {
+    margin-left: 180px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reg-form {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-container h2 {
+    font-size: 20px;
+  }
+
+  .regform-input label,
+  .regform-input input {
+    font-size: 13px;
+  }
+
+  .regform-input button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .account-link a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reg-form {
+    padding: 10px;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-container h2 {
+    font-size: 18px;
+  }
+
+  .regform-input label,
+  .regform-input input {
+    font-size: 12px;
+  }
+
+  .regform-input button {
+    font-size: 13px;
+    padding: 8px;
+    gap: 6px;
+  }
+
+  .spinner {
+    width: 16px;
+    height: 16px;
+    border-width: 2.5px;
+  }
+
+  .account-link a {
+    font-size: 12px;
+  }
 }

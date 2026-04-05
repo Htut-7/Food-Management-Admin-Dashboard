@@ -93,3 +93,94 @@
 .form-input button[type="submit"]:hover {
   opacity: 0.9;
 }
+
+@media (max-width: 1024px) {
+  .foodform {
+    margin-left: 180px;
+    padding: 18px;
+  }
+
+  .form-container h2 {
+    font-size: 20px;
+  }
+
+  .form-input label,
+  .form-input input,
+  .form-input textarea {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .foodform {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-container h2 {
+    font-size: 18px;
+  }
+
+  .form-input label,
+  .form-input input,
+  .form-input textarea {
+    font-size: 12px;
+  }
+
+  .catg button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .form-input img {
+    height: 150px;
+  }
+
+  .form-input button[type="submit"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .foodform {
+    padding: 10px;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-container h2 {
+    font-size: 16px;
+  }
+
+  .form-input label,
+  .form-input input,
+  .form-input textarea {
+    font-size: 11px;
+  }
+
+  .catg {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .catg button {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .form-input img {
+    height: 130px;
+  }
+
+  .form-input button[type="submit"] {
+    padding: 10px;
+    font-size: 13px;
+  }
+}

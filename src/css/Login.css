@@ -86,7 +86,7 @@
   text-align: center;
 }
 
-.link a{
+.link a {
   text-decoration: none;
   font-size: 14px;
   display: flex;
@@ -96,6 +96,90 @@
   font-weight: 500;
 }
 
-.link a:hover{
+.link a:hover {
   color: red;
+}
+
+@media (max-width: 1024px) {
+  .login-form {
+    margin-left: 180px;
+    padding: 18px;
+  }
+
+  .loginform-container {
+    padding: 22px;
+  }
+
+  .loginform-container h2 {
+    font-size: 20px;
+  }
+
+  .loginform-input label,
+  .loginform-input input {
+    font-size: 13px;
+  }
+
+  .loginform-input button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .loginform-container {
+    padding: 20px;
+  }
+
+  .loginform-container h2 {
+    font-size: 18px;
+  }
+
+  .loginform-input label,
+  .loginform-input input {
+    font-size: 12px;
+  }
+
+  .loginform-input button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .spinner {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loginform-container {
+    padding: 15px;
+  }
+
+  .loginform-container h2 {
+    font-size: 16px;
+  }
+
+  .loginform-input label,
+  .loginform-input input {
+    font-size: 11px;
+  }
+
+  .loginform-input button {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .spinner {
+    width: 14px;
+    height: 14px;
+    margin-left: 6px;
+  }
+
+  .link a {
+    font-size: 13px;
+  }
 }

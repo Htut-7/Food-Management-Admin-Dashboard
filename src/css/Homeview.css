@@ -90,12 +90,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 200px; /* adjust as needed */
+  min-height: 200px;
 }
 
 .spinner {
-  border: 6px solid #f3f3f3; /* Light gray */
-  border-top: 6px solid #3498db; /* Blue */
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -106,4 +106,94 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 1024px) {
+  .home {
+    margin-left: 180px;
+    padding: 18px;
+  }
+
+  .card h3 {
+    font-size: 13px;
+  }
+
+  .card p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .card img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .card h3 {
+    font-size: 12px;
+  }
+
+  .card p {
+    font-size: 18px;
+  }
+
+  .chart-section,
+  .recent {
+    padding: 15px;
+  }
+
+  .recent li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .card img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .card h3 {
+    font-size: 11px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  .chart-section,
+  .recent {
+    padding: 12px;
+  }
+
+  .recent li {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+
+  .home h2 {
+    font-size: 18px;
+  }
 }

@@ -77,3 +77,88 @@
 .detail-btn a:hover {
   opacity: 0.9;
 }
+
+@media (max-width: 1024px) {
+  .fooddetail {
+    margin-left: 180px;
+    padding: 18px;
+  }
+
+  .detail h3 {
+    font-size: 20px;
+  }
+
+  .detail p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fooddetail {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .detail h3 {
+    font-size: 18px;
+  }
+
+  .detail p {
+    font-size: 14px;
+  }
+
+  .detail img {
+    height: 200px;
+  }
+
+  .detail-catg span {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .detail span {
+    font-size: 13px;
+  }
+
+  .detail-btn a {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fooddetail {
+    padding: 10px;
+  }
+
+  .detail {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .detail h3 {
+    font-size: 16px;
+  }
+
+  .detail p {
+    font-size: 13px;
+  }
+
+  .detail img {
+    height: 160px;
+  }
+
+  .detail-catg span {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .detail span {
+    font-size: 12px;
+  }
+
+  .detail-btn a {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}

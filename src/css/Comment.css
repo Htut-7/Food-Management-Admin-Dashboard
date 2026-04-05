@@ -1,19 +1,26 @@
 .note-form {
   max-width: 400px;
+  width: 90%; /* allow shrinking on mobile */
   margin: 30px auto;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.note-input {
+
+.note-input,
+.note-textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #d1d5db;
   border-radius: 10px;
   font-size: 14px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   outline: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: all 0.2s;
+}
+
+.note-input {
+  border: 1px solid #d1d5db;
 }
 
 .note-input::placeholder {
@@ -26,16 +33,10 @@
 }
 
 .note-textarea {
-  width: 100%;
-  padding: 12px;
   border: 2px solid #e5e7eb;
-  border-radius: 10px;
   background-color: #f9fafb;
-  font-size: 14px;
   resize: none;
-  outline: none;
   min-height: 120px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .note-textarea:focus {
@@ -43,21 +44,31 @@
   box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
 }
 
+
 .note-actions {
   display: flex;
   gap: 10px;
   margin-top: 5px;
+  flex-wrap: wrap; 
 }
 
-.btn-primary {
-  background-color: #3b82f6;
-  color: #ffffff;
+
+.btn-primary,
+.btn-outline {
   padding: 10px 16px;
-  border: none;
   border-radius: 10px;
   font-size: 14px;
   cursor: pointer;
   transition: 0.2s;
+  flex: 1; 
+  min-width: 120px;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
@@ -69,14 +80,44 @@
   border: 1px solid #3b82f6;
   color: #3b82f6;
   background: transparent;
-  padding: 10px 16px;
-  border-radius: 10px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: 0.2s;
 }
 
 .btn-outline:hover {
   background-color: #3b82f6;
-  color: #ffffff;
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .note-input,
+  .note-textarea {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .note-form {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .note-input,
+  .note-textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
 }

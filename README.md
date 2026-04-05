@@ -41,7 +41,7 @@ If you would like to improve this project:
 
 Live Demo:
 
-https://your-live-demo-link.com
+https://food-management-admin-dashboard-g4po5lnjm-htut-7s-projects.vercel.app/login
 
 ---
 

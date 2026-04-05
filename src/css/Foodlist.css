@@ -99,10 +99,7 @@
   color: #fff;
 }
 
-.food-btn a:hover {
-  opacity: 0.9;
-}
-
+.food-btn a:hover,
 .food-btn button:hover {
   opacity: 0.9;
 }
@@ -112,4 +109,90 @@
   font-size: 1.2rem;
   color: #555;
   margin-top: 50px;
+}
+
+@media (max-width: 1024px) {
+  .foods {
+    margin-left: 180px;
+    padding: 18px;
+  }
+
+  .single-food h3 {
+    font-size: 15px;
+  }
+
+  .single-food p {
+    font-size: 13px;
+  }
+
+  .f-catg span {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .foods {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .single-food img {
+    height: 140px;
+  }
+
+  .single-food h3 {
+    font-size: 14px;
+  }
+
+  .single-food p {
+    font-size: 12px;
+  }
+
+  .food-btn a,
+  .food-btn button {
+    font-size: 11px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .food-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .single-food img {
+    height: 120px;
+  }
+
+  .single-food h3 {
+    font-size: 13px;
+  }
+
+  .single-food p {
+    font-size: 11px;
+  }
+
+  .f-catg {
+    gap: 4px;
+    padding: 0 5px 10px;
+  }
+
+  .f-catg span {
+    font-size: 10px;
+    padding: 3px 5px;
+  }
+
+  .food-btn {
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .food-btn a,
+  .food-btn button {
+    font-size: 11px;
+    padding: 6px;
+  }
 }
