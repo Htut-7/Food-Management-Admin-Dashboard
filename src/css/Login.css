@@ -1,0 +1,101 @@
+.login-form {
+  margin-left: 250px;
+  padding: 20px;
+  background-color: #f9fafb;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginform-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.loginform-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #111827;
+}
+
+.loginform-input {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.loginform-input label {
+  font-size: 14px;
+  color: #374151;
+}
+
+.loginform-input input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 14px;
+}
+
+.loginform-input input:focus {
+  border-color: #3b82f6;
+}
+
+.loginform-input button {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.loginform-input button:hover {
+  opacity: 0.9;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.link a{
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.link a:hover{
+  color: red;
+}

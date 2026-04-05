@@ -1,0 +1,21 @@
+.chart-box {
+  width: 100%;
+  max-width: 650px;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.chart-box .recharts-cartesian-axis-tick text {
+  fill: #fff;
+  font-size: 12px;
+}
+
+.chart-box .recharts-legend-item text {
+  color: #fff !important;
+}
+
+.chart-box .recharts-cartesian-grid line {
+  stroke: #444;
+}

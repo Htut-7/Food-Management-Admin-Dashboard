@@ -1,0 +1,115 @@
+.foods {
+  margin-left: 250px;
+  padding: 20px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.foods h2 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.single-food {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.single-food:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.single-food img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.single-food h3 {
+  font-size: 16px;
+  margin: 10px;
+  color: #111827;
+}
+
+.single-food p {
+  margin: 0 10px 10px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.f-catg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0 10px 10px;
+}
+
+.f-catg span {
+  background-color: #e5e7eb;
+  color: #374151;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.food-btn {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  margin-top: auto;
+}
+
+.food-btn a,
+.food-btn button {
+  flex: 1;
+  text-align: center;
+  padding: 6px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.food-btn a {
+  background-color: #3b82f6;
+  color: #fff;
+  text-decoration: none;
+}
+
+.food-btn button:nth-child(2) {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.food-btn button:nth-child(3) {
+  background-color: #10b981;
+  color: #fff;
+}
+
+.food-btn a:hover {
+  opacity: 0.9;
+}
+
+.food-btn button:hover {
+  opacity: 0.9;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 50px;
+}

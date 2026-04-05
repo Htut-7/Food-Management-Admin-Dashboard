@@ -1,0 +1,55 @@
+.user {
+  margin-left: 250px;
+  padding: 20px;
+  background-color: #f9fafb;
+  min-height: 80vh;
+}
+
+.user h2 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.single-user {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: 0.2s ease;
+}
+
+.single-user:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.single-user h4 {
+  font-size: 16px;
+  color: #111827;
+}
+
+.single-user span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.single-user a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #3b82f6;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.single-user a:hover {
+  text-decoration: underline;
+}
